@@ -51,13 +51,13 @@ public class Ship : MonoBehaviour {
 		}
 	}
 
-	void Attracted(){
+	public void Attracted(){
 //		Debug.Log ( "Attracted!" );
 		m_moveToPos = transform.position + m_direction * m_segDistance;
 		StartCoroutine ( AnimateShip() );
 	}
 
-	void Repulsed(){
+	public void Repulsed(){
 //		Debug.Log ( "Repulsed!" );
 		m_moveToPos = transform.position - m_direction * m_segDistance;
 		StartCoroutine ( AnimateShip() );
