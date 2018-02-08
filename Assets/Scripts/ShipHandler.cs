@@ -24,12 +24,20 @@ public class ShipHandler : MonoBehaviour {
 		return m_halPos;
 	}
 
+	public void WinState(){
+		m_uiHandler.ShowEnd ( true);
+	}
+
+	public void LoseState(){
+		m_uiHandler.ShowEnd ( false);
+	}
+
 	public void StartAnimating(){
-		m_uiHandler.ShowHideUI ( false );
+		m_uiHandler.ShowHideButtons ( false );
 	}
 
 	public void FinishedAnimating(){
-		m_uiHandler.ShowHideUI ( true );
+		m_uiHandler.ShowHideButtons ( true );
 	}
 
 	public void SetSelectedShip(Ship _ship){

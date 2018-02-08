@@ -2,11 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class UIHandler : MonoBehaviour {
 
 	public GameObject m_buttons;
-
-	public void ShowHideUI(bool _show){
+	public GameObject m_winScreen;
+	public GameObject m_loseScreen;
+	public void ShowHideButtons(bool _show){
 		m_buttons.SetActive ( _show );
+	}
+
+	public void ShowEnd(bool _win){
+		ShowHideButtons ( false );
+		if ( _win ) {
+			m_winScreen.SetActive ( true );
+		} else {
+			m_loseScreen.SetActive ( false );
+		}
+	}
+
+	public void HideWinScreen(){
+		m_winScreen.SetActive ( false );
+	}
+
+	public void ResetEverything(){
+		SceneManager.LoadScene ( 0 );
 	}
 }
