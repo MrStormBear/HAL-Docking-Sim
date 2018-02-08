@@ -16,6 +16,10 @@ public class UIHandler : MonoBehaviour {
 		}
 	}
 
+	public void ShowEndScreen(){
+		m_loseScreen.SetActive ( true );
+	}
+
 	public void HideWinScreen(){
 		m_winScreen.SetActive ( false );
 	}

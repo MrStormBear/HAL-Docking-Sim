@@ -57,6 +57,11 @@ public class Ship : MonoBehaviour {
 		StartCoroutine ( AnimateShip() );
 	}
 
+	public void FlyTowardsHAL(){
+		m_moveToPos = m_parent.GetHalPos ();
+		StartCoroutine ( AnimateShip () );
+	}
+
 	public void Repulsed(){
 //		Debug.Log ( "Repulsed!" );
 		m_moveToPos = transform.position - m_direction * m_segDistance;
