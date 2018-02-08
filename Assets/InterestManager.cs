@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class InterestManager : MonoBehaviour
 {
+    public GameObject m_winScreen;
+    public GameObject m_loseScreen;
 
     int diagScore = 0;
     // Use this for initialization
@@ -15,7 +17,7 @@ public class InterestManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("Score = " + diagScore);
+        //Debug.Log("Score = " + diagScore);
     }
 
     void VeryGood()
@@ -35,5 +37,25 @@ public class InterestManager : MonoBehaviour
     void VeryBad()
     {
         diagScore -= 2;
+    }
+
+    void CheckDiagScore()
+    {
+        if(diagScore == 6)
+        {
+            Debug.Log("You docked");
+        } else if (diagScore < 6)
+        {
+            Debug.Log("You may not be compatible");
+        }
+    }
+
+    public void ShowWin()
+    {
+        m_winScreen.SetActive(false);
+    }
+    public void ShowLose()
+    {
+        m_loseScreen.SetActive(false);
     }
 }
