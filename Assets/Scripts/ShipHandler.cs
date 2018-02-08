@@ -33,11 +33,9 @@ public class ShipHandler : MonoBehaviour {
 	}
 
 	public void StartAnimating(){
-		m_uiHandler.ShowHideButtons ( false );
 	}
 
 	public void FinishedAnimating(){
-		m_uiHandler.ShowHideButtons ( true );
 	}
 
 	public void SetSelectedShip(Ship _ship){
