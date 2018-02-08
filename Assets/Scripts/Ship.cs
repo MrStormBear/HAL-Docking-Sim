@@ -69,7 +69,7 @@ public class Ship : MonoBehaviour {
 		float t = 0f;
 		Vector3 defPos = transform.position;
 		while ( t < 0.98 ) {
-			Debug.Log ( t );
+//			Debug.Log ( t );
 			t += Time.deltaTime * m_moveSpeedReversed * m_curve.Evaluate(t);
 			transform.position = Vector3.Lerp ( defPos, m_moveToPos, t );
 			yield return null;
