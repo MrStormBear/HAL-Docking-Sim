@@ -1,11 +1,12 @@
 fileFormatVersion: 2
-guid: 86d3cdf362f42b94ca7f5b9c99672044
-timeCreated: 1518031512
+guid: 2651d5bd9e3cf2c459c06cc4c0cfa87a
+timeCreated: 1518095780
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Ships spritesheet_0
-    21300002: Ships spritesheet_1
+    21300000: heart pulsating_0
+    21300002: heart pulsating_1
+    21300004: heart pulsating_2
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -34,7 +35,7 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
     wrapU: 1
     wrapV: 1
@@ -48,7 +49,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 50
+  spritePixelsToUnits: 10
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -112,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ships spritesheet_0
+      name: heart pulsating_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 3
-        width: 51
-        height: 51
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -126,13 +127,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Ships spritesheet_1
+      name: heart pulsating_1
       rect:
         serializedVersion: 2
-        x: 84
-        y: 6
-        width: 57
-        height: 45
+        x: 48
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: heart pulsating_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
