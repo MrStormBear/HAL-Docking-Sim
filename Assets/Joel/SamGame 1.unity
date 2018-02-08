@@ -1240,7 +1240,6 @@ GameObject:
   - component: {fileID: 627627373}
   - component: {fileID: 627627374}
   - component: {fileID: 627627375}
-  - component: {fileID: 627627376}
   - component: {fileID: 627627378}
   - component: {fileID: 627627377}
   - component: {fileID: 627627379}
@@ -1249,6 +1248,10 @@ GameObject:
   - component: {fileID: 627627382}
   - component: {fileID: 627627383}
   - component: {fileID: 627627384}
+  - component: {fileID: 627627387}
+  - component: {fileID: 627627386}
+  - component: {fileID: 627627385}
+  - component: {fileID: 627627376}
   m_Layer: 0
   m_Name: Game Start Flow
   m_TagString: Untagged
@@ -1295,7 +1298,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 22
   indentLevel: 0
-  text: DAC 900
+  text: STAR BLAZER
   description: 
   targetBlock: {fileID: 627627370}
   hideIfVisited: 0
@@ -1343,8 +1346,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 358.2141
-    y: 98.94043
+    x: 368.34067
+    y: 88.81384
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1393,9 +1396,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 211.07175
-    y: 128.73915
-    width: 120
+    x: 185.75528
+    y: 157.85309
+    width: 143.67087
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1446,19 +1449,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 359.62958
-    y: 183.6454
-    width: 120
+    x: 525.45197
+    y: 131.79663
+    width: 157.59491
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 23
-  blockName: DAC stats
+  blockName: Star Blazer Stats
   description: 
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 627627372}
-  - {fileID: 627627376}
+  - {fileID: 627627387}
+  - {fileID: 627627386}
 --- !u!114 &627627371
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1472,9 +1476,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 511.104
-    y: 98.434364
-    width: 155.26312
+    x: 512.37006
+    y: 27.54829
+    width: 185.44301
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1499,7 +1503,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 24
   indentLevel: 0
-  storyText: DAC is not responding to any incoming transmissions.
+  storyText: STAR BLAZER is a high speed navigation vessel. Low human
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1599,10 +1603,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 28
+  itemId: 42
   indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 627627366}
+  targetFlowchart: {fileID: 2021157857}
+  targetBlock: {fileID: 2021157858}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
@@ -1695,9 +1699,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 499.39175
-    y: 185.603
-    width: 189.47365
+    x: 736.0999
+    y: 26.109299
+    width: 222.15186
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1726,7 +1730,7 @@ MonoBehaviour:
     stringRef: {fileID: 0}
     stringVal: 
   startIndex: 0
-  callMode: 0
+  callMode: 1
 --- !u!114 &627627382
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1795,6 +1799,79 @@ MonoBehaviour:
     booleanVal: 1
   animatorOLD: {fileID: 0}
   parameterNameOLD: 
+--- !u!114 &627627385
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 627627362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 742.18506
+    y: 133.64923
+    width: 157.59491
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 32
+  blockName: Go to Star Blazer
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 627627376}
+--- !u!114 &627627386
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 627627362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 40
+  indentLevel: 0
+  text: Return to the list of AI.
+  description: 
+  targetBlock: {fileID: 627627366}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &627627387
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 627627362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 39
+  indentLevel: 0
+  text: Exchange data with Star Blazer
+  description: 
+  targetBlock: {fileID: 627627385}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
 --- !u!114 &627627397
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1850,7 +1927,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 211.57053
     y: 75.62258
-    width: 120
+    width: 131.01263
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1944,7 +2021,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 211.17456
-    y: 20.684963
+    y: -12.209759
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1970,19 +2047,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -129.67723, y: 211.89034}
+  scrollPos: {x: -346.29922, y: 97.6165}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 292
-  zoom: 0.7600002
+  zoom: 0.7900002
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 627627380}
+  selectedCommands:
+  - {fileID: 627627381}
   variables:
   - {fileID: 627627397}
   description: 
@@ -2308,7 +2387,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 125.815506
     y: -379.37234
-    width: 191.09584
+    width: 189.53473
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3546,21 +3625,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -510.23758, y: 435.11603}
+  scrollPos: {x: -157.79076, y: 801.4553}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 292
-  zoom: 0.73000026
+  zoom: 0.43000045
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 697398728}
-  selectedCommands:
-  - {fileID: 697398725}
+  selectedBlocks: []
+  selectedCommands: []
   variables:
   - {fileID: 697398691}
   description: 
@@ -6528,7 +6605,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 697398708}
+  selectedFlowchart: {fileID: 627627414}
 --- !u!4 &1521758816
 Transform:
   m_ObjectHideFlags: 1
@@ -7694,6 +7771,98 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1936770430}
+--- !u!1 &2021157856
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 142980, guid: 5e7fbc8d4eb714b279eeeef2262c1e1a, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2021157859}
+  - component: {fileID: 2021157857}
+  - component: {fileID: 2021157858}
+  m_Layer: 0
+  m_Name: Star Blazer Flow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2021157857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11430050, guid: 5e7fbc8d4eb714b279eeeef2262c1e1a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2021157856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  scrollPos: {x: 0, y: 0}
+  variablesScrollPos: {x: 0, y: 0}
+  variablesExpanded: 1
+  blockViewHeight: 400
+  zoom: 1
+  scrollViewRect:
+    serializedVersion: 2
+    x: -343
+    y: -340
+    width: 1114
+    height: 859
+  selectedBlocks: []
+  selectedCommands: []
+  variables: []
+  description: 
+  stepPause: 0
+  colorCommands: 1
+  hideComponents: 1
+  saveSelection: 1
+  localizationId: 
+  showLineNumbers: 0
+  hideCommands: []
+  luaEnvironment: {fileID: 0}
+  luaBindingName: flowchart
+--- !u!114 &2021157858
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 11433304, guid: 5e7fbc8d4eb714b279eeeef2262c1e1a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2021157856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 67
+    y: 70
+    width: 120
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 0
+  blockName: New Block
+  description: 
+  eventHandler: {fileID: 0}
+  commandList: []
+--- !u!4 &2021157859
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 467082, guid: 5e7fbc8d4eb714b279eeeef2262c1e1a, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2021157856}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2068384176
 GameObject:
   m_ObjectHideFlags: 0
