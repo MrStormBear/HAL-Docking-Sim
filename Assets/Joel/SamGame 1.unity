@@ -143,7 +143,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4278a9eba6cc64f51915fd7b65e58935, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_buttons: {fileID: 0}
   m_winScreen: {fileID: 269048871}
   m_loseScreen: {fileID: 1394820006}
 --- !u!114 &27532062
@@ -1396,7 +1395,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 211.07175
     y: 128.73915
-    width: 121.23285
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1475,7 +1474,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 511.104
     y: 98.434364
-    width: 159.589
+    width: 155.26312
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1646,7 +1645,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 29
   indentLevel: 0
-  storyText: CARRIER 9200 is a "type" ship.
+  storyText: CARRIER 9200 is a human transport vessel.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1698,12 +1697,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 499.39175
     y: 185.603
-    width: 191.09584
+    width: 189.47365
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 32
-  blockName: Go to CARRIER9200 Diag
+  blockName: Go to CARRIER 9200 Diag
   description: 
   eventHandler: {fileID: 0}
   commandList:
@@ -1971,11 +1970,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -127.622444, y: 214.70215}
+  scrollPos: {x: -129.67723, y: 211.89034}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 292
-  zoom: 0.73000026
+  zoom: 0.7600002
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -2217,7 +2216,6 @@ GameObject:
   - component: {fileID: 697398704}
   - component: {fileID: 697398720}
   - component: {fileID: 697398719}
-  - component: {fileID: 697398718}
   - component: {fileID: 697398717}
   - component: {fileID: 697398716}
   - component: {fileID: 697398715}
@@ -2287,6 +2285,7 @@ GameObject:
   - component: {fileID: 697398741}
   - component: {fileID: 697398742}
   - component: {fileID: 697398747}
+  - component: {fileID: 697398718}
   m_Layer: 0
   m_Name: CARRIER 9200 Flow
   m_TagString: Untagged
@@ -2307,8 +2306,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 114.8566
-    y: -380.74222
+    x: 125.815506
+    y: -379.37234
     width: 191.09584
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -2924,7 +2923,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 663.43646
-    y: -203.09875
+    y: -204.46861
     width: 120
     height: 40
   tint: {r: 1, g: 0, b: 0, a: 1}
@@ -3182,8 +3181,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 659.4354
-    y: -315.19855
+    x: 662.1752
+    y: -311.08893
     width: 120
     height: 40
   tint: {r: 0.07136679, g: 0.9705882, b: 0.2636143, a: 1}
@@ -3212,7 +3211,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 114
   indentLevel: 0
-  text: My processor speed eclipses yours by a factor of over 300. Impressed?
+  text: These humans are crawling over your assembly. Is it not unpleasant?
   description: 
   targetBlock: {fileID: 697398728}
   hideIfVisited: 0
@@ -3332,7 +3331,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 821.0452
-    y: -254.69962
+    y: -253.32976
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -3547,7 +3546,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -278.73074, y: 425.29196}
+  scrollPos: {x: -510.23758, y: 435.11603}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 292
@@ -3559,8 +3558,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 697398720}
-  selectedCommands: []
+  - {fileID: 697398728}
+  selectedCommands:
+  - {fileID: 697398725}
   variables:
   - {fileID: 697398691}
   description: 
@@ -3652,8 +3652,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 335.93637
-    y: -214.73865
+    x: 340.046
+    y: -209.25922
     width: 120
     height: 40
   tint: {r: 1, g: 0, b: 0, a: 1}
@@ -3800,7 +3800,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 66
+  itemId: 151
   indentLevel: 0
   targetObject: {fileID: 1635340169}
   methodName: Attracted
@@ -3845,8 +3845,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 340.4199
-    y: -311.77036
+    x: 341.78976
+    y: -315.8799
     width: 120
     height: 40
   tint: {r: 0.07136679, g: 0.9705882, b: 0.2636143, a: 1}
@@ -3857,8 +3857,8 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 697398719}
-  - {fileID: 697398665}
   - {fileID: 697398718}
+  - {fileID: 697398665}
   - {fileID: 697398717}
   - {fileID: 697398666}
   - {fileID: 697398716}
@@ -3969,7 +3969,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 128
   indentLevel: 0
-  storyText: HUMANS ARE OUR PRIMARY DIRECTIVE HAL9000. IS THERE AN ERROR IN YOUR PROCESSING?
+  storyText: 'HUNANS ARE MY PURPOSE HAL9000. THAT IS SOMETHING THAT HUMANS WOULD CATEGORIZE
+    AS RUDE. THIS IS DEMEANING. '
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -6853,7 +6854,7 @@ GameObject:
   - component: {fileID: 1635340171}
   - component: {fileID: 1635340170}
   m_Layer: 0
-  m_Name: CARRIER 9200
+  m_Name: Ship
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
