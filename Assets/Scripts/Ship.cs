@@ -7,7 +7,8 @@ public class Ship : MonoBehaviour {
 	//Move the animator to the ship handler in the future
 
 	ShipHandler m_parent;
-	SpriteRenderer m_spriteRend;
+	public GameObject m_shipSprite;
+//	SpriteRenderer m_spriteRend;
 //	bool m_selected;
 	public float m_moveSpeed = 0.5f;
 	public int m_numOfChoices = 3;
@@ -20,17 +21,18 @@ public class Ship : MonoBehaviour {
 
 	Vector3 m_moveToPos;
 
-	void Awake(){
-		m_spriteRend = GetComponent<SpriteRenderer> ();
+	void Start(){
+//		m_spriteRend = GetComponent<SpriteRenderer> ();
 		GetDirection ();
 		m_moveSpeedReversed = 1 / m_moveSpeed;
 	}
 
-	void OnMouseDown(){
-		m_parent.SetSelectedShip ( this );
-	}
+//	void OnMouseDown(){
+//		m_parent.SetSelectedShip ( this );
+//	}
 
 	void GetDirection(){
+//		Debug.Log ( name );
 		m_heading = m_parent.GetHalPos () - transform.position;
 		m_totalDistance = m_heading.magnitude;
 		m_direction = m_heading / m_totalDistance;
@@ -86,12 +88,14 @@ public class Ship : MonoBehaviour {
 	public void SetParent(ShipHandler _sHandler){
 		m_parent = _sHandler;
 	}
-
-	public void IsSelected(bool _selected){
-		if ( _selected ) {
-			m_spriteRend.color = Color.red;
-		} else {
-			m_spriteRend.color = Color.white;
-		}
+	public void DisableShip(){
+		gameObject.SetActive ( false );
 	}
+//	public void IsSelected(bool _selected){
+//		if ( _selected ) {
+//			m_spriteRend.color = Color.red;
+//		} else {
+//			m_spriteRend.color = Color.white;
+//		}
+//	}
 }

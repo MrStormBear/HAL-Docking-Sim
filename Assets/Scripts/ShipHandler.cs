@@ -12,6 +12,7 @@ public class ShipHandler : MonoBehaviour {
 	void Awake(){
 		m_shipList = new List<Ship> ();
 		foreach ( Ship ship in FindObjectsOfType<Ship>() ) {
+			Debug.Log ( ship.name );
 			ship.SetParent ( this );
 			m_shipList.Add ( ship );
 
@@ -24,28 +25,20 @@ public class ShipHandler : MonoBehaviour {
 		return m_halPos;
 	}
 
-	public void WinState(){
-		m_uiHandler.ShowEnd ( true);
-	}
-
-	public void LoseState(){
-		m_uiHandler.ShowEnd ( false);
-	}
-
 	public void StartAnimating(){
 	}
 
 	public void FinishedAnimating(){
 	}
 
-	public void SetSelectedShip(Ship _ship){
-		if ( m_selectedShip != null ) {
-			m_selectedShip.IsSelected ( false );
-		}
-		m_selectedShip = _ship;
-		m_selectedShip.IsSelected ( true );
-		Debug.Log ( m_selectedShip.name );
-	}
+//	public void SetSelectedShip(Ship _ship){
+//		if ( m_selectedShip != null ) {
+//			m_selectedShip.IsSelected ( false );
+//		}
+//		m_selectedShip = _ship;
+//		m_selectedShip.IsSelected ( true );
+//		Debug.Log ( m_selectedShip.name );
+//	}
 
 	public void GetSelectedShip(int _choice){
 		if ( m_selectedShip != null ) {
